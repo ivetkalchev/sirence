@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="bg">
+ <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="language" content="bg">
+    <title>Фета</title>
+	<link rel="icon" type="image/x-icon" href="https://pngimg.com/d/cheese_PNG25292.png">
+	<script type="text/javascript" SRC="picture-fall.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+	<link rel="stylesheet" type="text/css" href="galeriq.css"/>
+<style>
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+td {
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 20px;
+	width: 50%;
+}
+article {
+	height: 860px;
+}
+</style>
+</head>
+<body>
+<header>
+	<div class="bouncing-text">
+		<div class="С">С</div>
+		<div class="И">И</div>
+		<div class="Р">Р</div>
+		<div class="Е">Е</div>
+		<div class="Н">Н</div>
+		<div class="А">А</div>
+		<div class="shadow"></div>
+		<div class="shadow-two"></div>
+	</div>
+</header>
+<section>
+<nav class="navbar">
+	<a href="index.html">Начало</a>
+	<a href="chedur.html">Чедър</a>
+	<a href="mocarela.html">Моцарела</a>
+	<a href="parmezan.html">Пармезан</a>
+	<a href="maskarpone.html">Маскарпоне</a>
+	<a href="bri.html">Бри</a>
+	<a href="feta.html">Фета</a>
+	<a href="sinio.html">Синьо сирене</a>
+	<a href="gauda.html">Гауда</a>
+	<a href="kamember.html">Камамбер</a>
+</nav>
+<article>
+	<h2>Фета</h2>
+	<p>Фета (на гръцки: φέτα) е вид саламурено сирене, традиционно произвеждано в Гърция, където 75% от консумираните сирена са фета. Подобно е на българското бяло саламурено сирене. Прави се от овче мляко, понякога с известни добавки от козе мляко. Има леко зърнеста структура и се яде самостоятелно, както и като компонент на салати и печива.</p>
+		<div class="slider-container">
+			<div class="slides fade">
+				<div class="slider-numbers">1/2</div>
+				<div class="slider-image"><img src="https://www.thespruceeats.com/thmb/yaagIW7aXwiQhg1YzeQBqk1BZWY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/homemade-feta-cheese-1327498-Hero-1-b54f86695087467a98568d9eb3b6bc79.jpg" alt="Фета" width="720px" height="500px"style="border: 18px solid #FFBD24;box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);"></div>
+			</div>
+			<div class="slides fade">
+				<div class="slider-numbers">2/2</div>
+				<div class="slider-image"><img src="https://post.healthline.com/wp-content/uploads/2020/08/Feta_Cheese_Good_or_Bad-732x549-thumbnail.jpg" alt="Фета" width="720px" height="500px" style="border: 18px solid #FFBD24;box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);"></div>
+			</div> 
+			<a class="prev" onclick="plusIndex(-1)">❮</a>
+			<a class="next" onclick="plusIndex(+1)">❯</a>
+			<div class="slider-bullets" id="slider-bullets">
+				<span class="dots" onclick="currentSlide(1)"></span>
+				<span class="dots" onclick="currentSlide(2)"></span>
+			</div>
+		</div>
+	<h2>История</h2>
+	<p>Много хора свързват фета с Гърция, и с право - фетата е направена в Гърция от хиляди години. Дори се смята, че фета е описана в Одисеята на Омир. Фетата е регистрирана като продукт със защитено наименование за произход (ЗНП), така че според правото на Европейския съюз единственото истинско фета е това, което се прави в Гърция.<br>Въпреки това, много балкански страни, както и други (като Франция, Израел и Съединените щати) също произвеждат фета, въпреки че според законите на ЕС за защитено наименование за произход, тя трябва да се нарича сирене "стил фета" или да се използва под друго име.</p>
+<script>
+var slideIndex = 1;
+function showImage(n) {
+    'use strict';
+    var slide = document.getElementsByClassName('slides'),
+        dots = document.getElementsByClassName('dots'),
+        i;
+    if (n > slide.length) {
+        slideIndex = 1;
+    } 
+    if (n < 1) {
+        slideIndex = slide.length;
+    }
+    for (i = 0; i < slide.length; i++) {
+        slide[i].style.display = 'none';
+    }
+    slide[slideIndex - 1].style.display = 'block';
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(' active', '');
+    }
+    dots[slideIndex - 1].className += ' active';
+}
+showImage(slideIndex);
+function plusIndex(n) {
+    'use strict';
+    showImage(slideIndex += n);
+}
+function currentSlide(n) {
+    'use strict';    
+    showImage(slideIndex = n);
+}
+</script>
+</article>
+<footer>
+	<div class="footer">
+        <h3>Допълнителна информация</h3>
+        <dl>
+          <dt>Благодарности към <a href="https://chat.openai.com/">ChatGPT</a> и <a href="https://bg.wikipedia.org/">Уикипедия</a>, които предоставиха информацията за този сайт.</dt>
+          <dt>Нямам права за нищо, което е вложено тук, моля Ви не ме съдете! Това е училищен проект.</dt>
+          <dt>Ако имате някакви оплаквания, <a href="mailto:ivetkalchev@gmail.com">натиснете тук</a>, за да се свържете с мен (по-добре недейте, не си проверявам имейла често).</dt>
+        </dl>
+	</div>
+	<div class="image-container">
+		<img src="https://i.pinimg.com/originals/34/6f/77/346f77c4a481f12e01eaed7b298bd68d.gif" height="90px" width="120px" alt="Мишка беглец">
+	</div>
+</footer>
+</section>
+
+</body>
+</html>
